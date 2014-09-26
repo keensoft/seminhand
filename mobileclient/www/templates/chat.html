@@ -1,0 +1,50 @@
+<ion-view title="Chat" ng-controller="Messages" class="messaging-view">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <!--    <ion-nav-buttons side="right">
+            <button ng-click="goToPres(1)" class="button button-icon icon ion-ios7-monitor-outline"></button>
+        </ion-nav-buttons>-->
+    <ion-content class="content-stable" ng-style="{ bottom: data.keyboardHeight + 'px' }">
+        <div ng-repeat="message in messages" ng-class="{ other: message.userId != myId }" class="message">
+
+            <div class="photo icon ion-person"></div>
+            <div class="message"><span><b>{{ message.user }}:</b> {{ message.text }}</span>
+            </div>
+
+        </div>
+    </ion-content>
+
+
+    <ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
+        <label class="item-input-wrapper">
+            <input id="data" type="text" placeholder="write here..." on-return="sendMessage()" ng-model="data.message" on-focus="inputUp()" on-blur="inputDown()" />
+        </label>
+        <button id="datasend" class="button button-clear" ng-click="sendMessage()">
+            Send
+        </button>
+    </ion-footer-bar>
+</ion-view>
+
+        <script>
+
+
+            // on load of page
+            $(function(){
+// when the client clicks SEND
+                $('#data').click( function() {
+                    var message = $('#data').val();
+                    $('#data').val('');
+// tell server to execute 'sendchat' and send along one parameter
+                    socket.emit('sendchat', message);
+                });
+
+// when the client hits ENTER on their keyboard
+                $('#data').keypress(function(e) {
+                    if(e.which == 13) {
+                        $(this).blur();
+                        $('#datasend').focus().click();
+                    }
+                });
+
+        </script>

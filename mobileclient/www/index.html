@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+      <!-- Run in full-screen mode. -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+
+      <!-- Make the status bar black with white text. -->
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+      <!-- Customize home screen title. -->
+      <meta name="apple-mobile-web-app-title" content="SemInHand">
+
+      <!-- Disable phone number detection. -->
+      <meta name="format-detection" content="telephone=no">
+
+
+
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+      <link href="lib/AngularJS-Toaster-master/toaster.css" rel="stylesheet">
+
+
+      <!-- Startup images -->
+
+      <!-- iOS 8 iPhone 6 (portrait) -->
+      <link rel="apple-touch-startup-image" href="addtohomescreen/imgs/apple-touch-startup-image-750x1294.png" media="(max-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+     <!-- iOS 8 iPhone 6 Plus (portrait) -->
+      <link rel="apple-touch-startup-image" href="addtohomescreen/imgs/apple-touch-startup-image-1242×2148.png" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)">
+<!--
+
+      &lt;!&ndash; iOS 8 iPhone 6 (landscape) &ndash;&gt;
+      <link rel="apple-touch-startup-image" href="addtohomescreen/imgs/apple-touch-startup-image-710x1334.png" media="(max-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+      &lt;!&ndash; iOS 8 iPhone 6 Plus (landscape) &ndash;&gt;
+      <link rel="apple-touch-startup-image" href="addtohomescreen/imgs/apple-touch-startup-image-2208×1882.png" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)">
+
+
+-->
+
+      <!--
+        &lt;!&ndash; iPhone 6  (portrait) &ndash;&gt;
+      <link href="addtohomescreen/imgs/apple-touch-startup-image-iPhone6.png"
+            media="(device-width: 375px) and (device-height: 667px)
+                 and (orientation: portrait)
+                 and (-webkit-device-pixel-ratio: 2)"
+            rel="apple-touch-startup-image">
+
+      &lt;!&ndash; iPhone 6 Plus  (portrait) &ndash;&gt;
+      <link href="addtohomescreen/imgs/apple-touch-startup-image-iPhone6Plus.png"
+            media="(device-width: 1080px) and (device-height: 1920px)
+                 and (orientation: portrait)
+                 and (-webkit-device-pixel-ratio: 3)"
+            rel="apple-touch-startup-image">
+
+-->
+      <!-- iOS 6 & 7 iPad (retina, portrait) -->
+      <link href="addtohomescreen/imgs/apple-touch-startup-image-1536x2008.png"
+            media="(device-width: 768px) and (device-height: 1024px)
+                 and (orientation: portrait)
+                 and (-webkit-device-pixel-ratio: 2)"
+            rel="apple-touch-startup-image">
+
+      <!-- iOS 6 & 7 iPad (retina, landscape) -->
+      <link href="addtohomescreen/imgs/apple-touch-startup-image-1496x2048.png"
+            media="(device-width: 768px) and (device-height: 1024px)
+                 and (orientation: landscape)
+                 and (-webkit-device-pixel-ratio: 2)"
+            rel="apple-touch-startup-image">
+
+      <!-- iOS 6 iPad (portrait) -->
+      <link href="addtohomescreen/imgs/apple-touch-startup-image-768x1004.png"
+            media="(device-width: 768px) and (device-height: 1024px)
+                 and (orientation: portrait)
+                 and (-webkit-device-pixel-ratio: 1)"
+            rel="apple-touch-startup-image">
+
+      <!-- iOS 6 iPad (landscape) -->
+      <link href="addtohomescreen/imgs/apple-touch-startup-image-748x1024.png"
+            media="(device-width: 768px) and (device-height: 1024px)
+                 and (orientation: landscape)
+                 and (-webkit-device-pixel-ratio: 1)"
+            rel="apple-touch-startup-image">
+
+      <!-- iOS 6 & 7 iPhone 5 -->
+      <link href="addtohomescreen/imgs/apple-touch-startup-image-640x1096.png"
+            media="(device-width: 320px) and (device-height: 568px)
+                 and (-webkit-device-pixel-ratio: 2)"
+            rel="apple-touch-startup-image">
+
+      <!-- iOS 6 & 7 iPhone (retina) -->
+      <link href="addtohomescreen/imgs/apple-touch-startup-image-640x920.png"
+            media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 2)"
+            rel="apple-touch-startup-image">
+
+      <!-- iOS 6 iPhone -->
+      <link href="addtohomescreen/imgs/apple-touch-startup-image-320x460.png"
+            media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 1)"
+            rel="apple-touch-startup-image">
+
+
+
+
+
+      <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+      <link href="css/ionic.app.css" rel="stylesheet">
+      -->
+
+
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!--Remember to uncomment this if deploy cordova app-->
+    <!--<script src="cordova.js"></script>-->
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+      <script src="lib/AngularJS-Toaster-master/toaster.js"></script>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+      <script src="http://desolate-chamber-7892.herokuapp.com/socket.io/socket.io.js"></script>
+
+      <meta name="apple-mobile-web-app-title" content="SemInHand">
+      <link rel="shortcut icon" sizes="16x16" href="addtohomescreen/imgs/icon-16x16.png">
+      <link rel="shortcut icon" sizes="196x196" href="addtohomescreen/imgs/icon-196x196.png">
+      <link rel="apple-touch-icon-precomposed" href="addtohomescreen/imgs/icon-152x152.png">
+
+      <!--New icon sizes for iPhone 6 and iPhone 6 Plus 120x120 and 180x180-->
+      <link rel="apple-touch-icon-precomposed" sizes="180x180" href="retinahd_icon.png">
+
+      <link rel="stylesheet" type="text/css" href="addtohomescreen/style/addtohomescreen.css">
+      <script src="addtohomescreen/src/addtohomescreen.js"></script>
+      <script>
+          addToHomescreen({
+              detectHomescreen: true
+          });
+      </script>
+
+
+  </head>
+
+  <body ng-app="starter">
+    <ion-nav-view></ion-nav-view>
+  </body>
+
+
+  <script src="lib/analytics/angulartics.min.js"></script>
+  <script src="lib/analytics/angulartics-ga.min.js"></script>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-50000851-3', { 'cookieDomain': 'none' });
+  </script>
+
+  <script src="lib/flurry/angulartics-flurry.min.js"></script>
+  <script src="https://cdn.flurry.com/js/flurry.js"></script>
+  <script>FlurryAgent.startSession("ZMT9PYJS83PZ8YPNKXHQ");</script>
+</html>

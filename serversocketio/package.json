@@ -1,0 +1,16 @@
+{
+  "author": "Alberto Muñoz <alberto.munoz@keensoft.es>",
+  "name": "SemInHand",
+  "description": "SemInHand NodeJS Server side",
+  "version": "1.0.0",
+
+  "dependencies": {
+    "hashids": "0.3.3",
+    "bower" : "*",
+    "express" : "*",
+    "socket.io" : "*"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
