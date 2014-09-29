@@ -9,15 +9,9 @@ Demos
 * Node Server: http://desolate-chamber-7892.herokuapp.com/socket.io/socket.io.js
 * Node Server Port: 80
 
-**Github Pages Hosting :)**
+**Demo Pages**
 * Teacher: http://keensoft.github.io/seminhand/teacher/
 * Attendee: http://keensoft.github.io/seminhand/mobileclient/www/
-
-
-**keensoft server**
-
-* Teacher: http://seminhand.demo.keensoft.es:8888/seminhand/teacher
-* Attendee: http://seminhand.demo.keensoft.es:8888/seminhand/mobileclient
 
 
 Description
